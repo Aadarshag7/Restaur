@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::controller(BookFetchController::class)->prefix('menu')->group(function(){
-    Route::get('','index')->name('book.index')
+Route::controller(BookFetchController::class)->prefix('Fetch')->group(function(){
+    Route::get('','index')->name('book.index');
 });

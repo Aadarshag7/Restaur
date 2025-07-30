@@ -14,8 +14,8 @@ class BookFetchController extends Controller
     {
         $response=Http::get('http://127.0.0.1:8000/api/api-book');
 
-        $data=$response->json();
-        return view('book.index',compact('data'));
+        $datas=$response->json();
+        return view('book.index',compact('datas'));
 
     }
 
